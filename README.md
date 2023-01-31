@@ -8,7 +8,7 @@ Note that in this project, our focus was not to model the behavior of bison herd
 
 The Julia scripts: 
 * ScaffSpind.jl 
-  * Generates circle size, 2-dimensional coordinates (center of each circle), and parents of each circle 
+  * Generates circle size, 2-dimensional coordinates of the circles, "lifespan", and "parents" of each circle 
 * Skewer_NF 
   * Assigns a discrete time to a group of circle sizes, 2-dimensional coordinates, and parent status. This results in time frames that inform us where the circle is and whether if it is alive
 * Create_CSV.jl 
@@ -29,7 +29,7 @@ Here are some languages and packages that should be installed:
   * Distributions
   * Random
   * DataFrames
-  * CSV
+  * CSV 
 * For R: 
   * ggplot2 
   * ggforce 
@@ -39,4 +39,11 @@ Here are some languages and packages that should be installed:
   * MIDI-UTIL
   * audiolazy 
 
-At the moment, we are working on a Bash script for end users so that the process may be more streamlined.
+The workflow will be available soon (at the moment, we are working on a Bash script to streamline this process):
+<!---**Part 1**
+1. In the Julia REPL, import the required packages with `using <Package_Name>`. If package isn't there, use `using Pkg; Pkg.add("Package Name")`
+2. Then import ScaffSpind.jl using `include("path\to\ScaffSpind.jl")`.
+3. Use `SST; Clr`. The former stores a) 
+-->
+
+
