@@ -19,11 +19,11 @@ Python Script:
 
 ## How to use
 Here are some languages and packages that should be installed:
-*For Julia:
-   *Distributions
-   *Random
-   *DataFrames
-   *CSV
+For Julia:
++Distributions
++Random
++DataFrames
++CSV
 *For R: 
    *ggplot2 
    *ggforce.  
