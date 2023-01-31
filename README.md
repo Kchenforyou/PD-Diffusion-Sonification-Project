@@ -7,30 +7,36 @@ The Poisson Dirichlet Diffusion Process is a Continuous Markov Process that can 
 Note that in this project, our focus was not to model the behavior of bison herds; the above was just a useful analogy. Rather, we simulated random numbers with the Poisson Dirichlet Diffusion Process to create an animation and a musical representation of the process. Below is a brief summary of how the codebase works.
 
 The Julia scripts: 
-*ScaffSpind.jl generates circle size, 2-dimensional coordinates (center of each circle), and parents of each circle 
-*Skewer_NF assigns a discrete time to a group of circle sizes, 2-dimensional coordinates, and parent status. This results in time frames that inform us where the circle is and whether if it is alive
-*Create_CSV.jl organizes the time frames into CSV files
+* ScaffSpind.jl 
+  * Generates circle size, 2-dimensional coordinates (center of each circle), and parents of each circle 
+* Skewer_NF 
+  * Assigns a discrete time to a group of circle sizes, 2-dimensional coordinates, and parent status. This results in time frames that inform us where the circle is and whether if it is alive
+* Create_CSV.jl 
+  * Organizes the time frames into CSV files
 
 R Script:
-*SST_Animate.R uses ggplot2 to create individual frames from each CSV file to be uploaded to a GIF-making site. 
+* SST_Animate.R 
+  * Uses ggplot2 to create individual frames from each CSV file to be uploaded to a GIF-making site. 
 
 Python Script: 
-*Sonification_Script.py creates a midi file. For each CSV file, it maps circle size to volume and one of the two coordinates to pitch.
+* Sonification_Script.py 
+  * Creates a midi file. For each CSV file, it maps circle size to volume and one of the two coordinates to pitch.
 
 ## How to use
 Here are some languages and packages that should be installed:
-For Julia:
-1. Distributions
-2. Random
-+DataFrames
-+CSV
-*For R: 
-   *ggplot2 
-   *ggforce.  
-*Python: 
-   *numpy
-   *Pandas
-   *MIDI-UTIL
-   *audiolazy 
+
+* For Julia:
+  * Distributions
+  * Random
+  * DataFrames
+  * CSV
+* For R: 
+  * ggplot2 
+  * ggforce 
+* Python: 
+  * numpy
+  * Pandas
+  * MIDI-UTIL
+  * audiolazy 
 
 At the moment, we are working on a Bash script for end users so that the process may be more streamlined.
