@@ -20,8 +20,8 @@ Python Script:
 ## How to use
 Here are some languages and packages that should be installed:
 For Julia:
-+Distributions
-+Random
+1. Distributions
+2. Random
 +DataFrames
 +CSV
 *For R: 
